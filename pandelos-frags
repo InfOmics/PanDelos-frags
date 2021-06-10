@@ -1,0 +1,57 @@
+#!/bin/bash
+#SCRIPT=`realpath $0`
+#SCRIPTPATH=`dirname $SCRIPT`
+SCRIPTPATH=`dirname $( realpath $0 )`
+echo $SCRIPTPATH
+
+echo "----------------------------------------"
+echo "PanDelos-fragments"
+echo "University of Verona, Italy"
+echo "Bonnici et al."
+echo "----------------------------------------"
+
+
+#CHECK THAT EVERY REQUIREMENT IS SATISFIED
+#TODO
+chmod +x $SCRIPTPATH/scripts/*.sh
+PATH=$PATH:${$SCRIPTPATH/scripts/}
+
+
+if [ $# -eq 0 ]
+  then
+    echo "Usage: pandelos-frags ilist output_directory"
+fi
+
+ifile="$1"
+odir="$2"
+
+mkdir -p $odir
+rm $odir/*
+mkdir $odir/complete
+
+
+while read -r line; do
+    echo "$line"
+    gtype=`echo -n $line | cut -d" " -f 2 |  tr -d '\r'`
+    gfile=`realpath $( echo $line | cut -d" " -f 1 )`
+    gname=`basename $gfile`
+    echo "$gfile" 
+    if [ "$gtype" = "complete" ]; then
+        echo "COMLPETE"
+        cat $gfile >> $odir/ALL_complete_genomes_genes.fna
+        bash $SCRIPTPATH/scripts/complete_genome_genes_extraction.sh $gfile $odir/complete/$gname
+        cat $odir/complete/$gname/results/gene_sequences.fna >> $odir/ALL_genes.fna
+    else
+        echo "FRAGMENTED"
+        cat $gfile >> $odir/ALL_fragmented_genomes_genes.fna
+        $SCRIPTPATH/scripts/reconstruct_genes.sh $gfile $odir/fragmented/$gname $gtype
+        cat $odir/fragmented/$gname/results/gene_sequences.fna >> $odir/ALL_genes.fna
+    fi
+    echo "----------------------------------------"
+done < "$ifile"
+
+mkdir -p $odir/pangenome
+bash $SCRIPTPATH/PanDelosFork/pandelos.sh $odir/ALL_genes.fna $odir/pangenome
+
+
+echo "Done!"
