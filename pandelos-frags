@@ -50,8 +50,8 @@ while read -r line; do
     echo "----------------------------------------"
 done < "$ifile"
 
-mkdir -p $odir/pangenome
-bash $SCRIPTPATH/PanDelosFork/pandelos.sh $odir/ALL_genes.fna $odir/pangenome
+mkdir -p $odir
+bash $SCRIPTPATH/PanDelosFork/pandelos.sh $odir/ALL_genes.fna $odir
 
 
 echo "Done!"
