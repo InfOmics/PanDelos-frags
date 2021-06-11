@@ -32,3 +32,4 @@ done
 
 
 ../../pandelos-frags $ilist $odir
+python3 get_statistics.py result.clus
