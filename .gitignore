@@ -514,3 +514,7 @@ examples/moraxella/result/fragmented/GCF_010612395.1_ASM1061239v1_genomic.fna/re
 examples/moraxella/result/fragmented/GCF_010612395.1_ASM1061239v1_genomic.fna/results/Moraxella_predictedCDSs
 examples/moraxella/result/fragmented/GCF_010612395.1_ASM1061239v1_genomic.fna/results/Moraxella_predictedCDSs_filtered
 examples/moraxella/result/fragmented/GCF_010612395.1_ASM1061239v1_genomic.fna/results/Moraxella_reconstructed_genome.fna
+examples/moraxella/tmp.ffZSsBSD5D
+.gitignore
+examples/moraxella/result/genes_from_complete.fna
+examples/moraxella/result/genes_form_fragmented.fna

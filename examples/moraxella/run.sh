@@ -31,4 +31,4 @@ echo "$gdir/$e    prokaryotic" >>$ilist
 done
 
 
-../../padelos-frags $ilist $odir
+../../pandelos-frags $ilist $odir
