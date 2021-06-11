@@ -518,3 +518,5 @@ examples/moraxella/tmp.ffZSsBSD5D
 .gitignore
 examples/moraxella/result/genes_from_complete.fna
 examples/moraxella/result/genes_form_fragmented.fna
+examples/moraxella/result.clus
+examples/moraxella/tmp.ffZSsBSD5D.net

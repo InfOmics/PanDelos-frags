@@ -47,7 +47,7 @@ while read -r line; do
         cat $gfile >> $odir/ALL_fragmented_genomes_genes.fna
         $SCRIPTPATH/scripts/reconstruct_genes.sh $gfile $odir/fragmented/$gname $gtype
         cat $odir/fragmented/$gname/results/gene_sequences.fna >> $odir/ALL_genes.fna
-        cat $odir/fragmented/$gname/results/gene_sequences.fna >> $odir/genes_form_fragmented.fna
+        cat $odir/fragmented/$gname/results/gene_sequences.fna >> $odir/genes_from_fragmented.fna
     fi
     echo "----------------------------------------"
 done < "$ifile"
