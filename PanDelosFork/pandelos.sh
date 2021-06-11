@@ -70,7 +70,7 @@ echo "k = $k"
 echo "clustering ..."
 date
 #java -server -d64 -Xmn2560M -Xms6144M -Xmx60144M 
-java -server -Xmx6144M -cp ${sdir}/ext/commons-io-2.6.jar -cp $ig infoasys.cli.pangenes.Pangenes $idb $k $dnet >$tmp
+java -server -cp ${sdir}/ext/commons-io-2.6.jar -cp $ig infoasys.cli.pangenes.Pangenes $idb $k $dnet >$tmp
 echo "de-clustering ..."
 date
 python3 $nc $idb  $dnet >>$tmp
