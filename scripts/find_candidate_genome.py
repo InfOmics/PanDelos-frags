@@ -28,7 +28,7 @@ for f in fragmented_genome:
 query_file.close()
 
 #os.system("ncbi-blast-2.10.0+/blastn -query " + query + " -max_target_seqs 1 -max_hsps 1 -num_threads 8 -outfmt 6 -db " +
-os.system(scriptdir+"/../ncbi-blast-2.10.0+/blastn -query " + query + " -max_target_seqs 1 -max_hsps 1 -num_threads 8 -outfmt 6 -db " +
+os.system(scriptdir+"/../ncbi-blast-2.10.0+/blastn -query " + query + " -max_target_seqs 1 -max_hsps 1 -num_threads 4 -outfmt 6 -db " +
           database + " > " + output_hits)
 
 hits = os.popen("cat " + output_hits).read().split("\n")

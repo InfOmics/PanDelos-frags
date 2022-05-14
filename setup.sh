@@ -2,8 +2,8 @@
 rm -rf ref_prok_rep_genomes && mkdir ref_prok_rep_genomes && cd ref_prok_rep_genomes
 wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/ref_prok_rep_genomes.??.tar.gz
 for f in *.tar.gz
- do
-   tar -xvf "$f"
+do
+tar -xvf "$f"
 done
 rm *.tar.gz
 

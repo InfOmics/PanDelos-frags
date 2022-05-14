@@ -14,7 +14,7 @@ echo "----------------------------------------"
 #CHECK THAT EVERY REQUIREMENT IS SATISFIED
 #TODO
 chmod +x $SCRIPTPATH/scripts/*.sh
-PATH=$PATH:${$SCRIPTPATH/scripts/}
+#PATH=$PATH:${$SCRIPTPATH/scripts/}
 
 
 if [ $# -eq 0 ]
