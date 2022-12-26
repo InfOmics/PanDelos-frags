@@ -3,7 +3,8 @@ Added files for running PanDelos and Roary on three bacterial species obtained f
 To run the tools:
 ./prepare_all.sh # modify the script to analyze species of interest
 
-Note that PanDelos and Roary have different requirements you need to fulfill to be able to run these scripts.
+Note that PanDelos and Roary have different requirements you need to fulfill to be able to run these scripts. 
+Also, make sure you have run the script ../setup.sh for PanDelos to run.
 
 To run downstream analyses on obtained results:
 - process_metagenomes.ipynb
