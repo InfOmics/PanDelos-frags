@@ -1,0 +1,15 @@
+Added files for running PanDelos and Roary on three bacterial species obtained from metagenomic sequencing. 
+
+To run the tools:
+./prepare_all.sh # modify the script to analyze species of interest
+
+Note that PanDelos and Roary have different requirements you need to fulfill to be able to run these scripts.
+
+To run downstream analyses on obtained results:
+- process_metagenomes.ipynb
+- funcional_analysis_metagenomes.ipynb
+
+NOTES: 
+- for now the analyses are ipynb files for ease of looking at the results, but will be made into python scripts and automated into the test pipeline
+- the complete genomes used in the analyses are for now given in the directory, still have to automate their downloads
+- still have to upload the tests made on PanProva and scripts used to analyze them!
