@@ -41,8 +41,9 @@ def count_covered_positions(start, end):
         start = t
     count = 0
     for i in range(start,end+1):
-        if bam_covered[i]:
-            count += 1
+        if len(bam_covered) > i:
+            if bam_covered[i]:
+                count += 1
     return count
 
 def get_covered_ranges(start, end):

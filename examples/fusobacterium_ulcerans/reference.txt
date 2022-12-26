@@ -1,0 +1,1 @@
+https://api.ncbi.nlm.nih.gov/datasets/v1/genome/download?filename=GCF_003019675.1.zip&ncbi_phid=322C2BE331335BF5000042A14B60DD2C.1.m_3.045

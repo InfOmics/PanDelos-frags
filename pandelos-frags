@@ -55,5 +55,7 @@ done < "$ifile"
 mkdir -p $odir
 bash $SCRIPTPATH/PanDelosFork/pandelos.sh $odir/ALL_genes.fna $odir
 
+python3 $SCRIPTPATH/scripts/get_fragment_coordinates.py $odir
+bash $SCRIPTPATH/scripts/get_fragment_coordinates.sh $odir
 
 echo "Done!"

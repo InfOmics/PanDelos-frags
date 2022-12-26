@@ -1,0 +1,17 @@
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/CM_cf__CF_FIFC013SS_t5M16__bin.10.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/CM_cf__CF_TNFC004SA_t1M15__bin.16.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/CM_periimplantitis__SP_602SPI_T016__bin.1.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS011310__bin.11.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS014690__bin.39.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS015215__bin.18.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS018573__bin.43.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS018665__bin.11.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS019073__bin.4.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS019077__bin.42.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS019591__bin.15.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS022602__bin.77.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS045262__bin.2.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS051930__bin.34.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS051941__bin.14.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS056892__bin.12.fa
+https://s3-eu-west-1.amazonaws.com/sgb-genomes/data/genomes/8235/HMP_2012__SRS064449__bin.25.fa
