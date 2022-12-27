@@ -10,6 +10,8 @@ To run downstream analyses on obtained results:
 - process_metagenomes.ipynb
 - funcional_analysis_metagenomes.ipynb
 
+These require to put a "diamond" executable in PanDelos-fragments directory
+
 NOTES: 
 - for now the analyses are ipynb files for ease of looking at the results, but will be made into python scripts and automated into the test pipeline
 - the complete genomes used in the analyses are for now given in the directory, still have to automate their downloads
