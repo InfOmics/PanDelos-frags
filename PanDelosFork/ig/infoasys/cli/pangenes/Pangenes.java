@@ -135,7 +135,7 @@ public class Pangenes {
 						for(int j=0; j<scores.length; j++){
 							lj = (double)(pnelsa.sequenceLength.get(j) - k + 1);
 							
-							if(percs[i][j] < ( 1.0/(2.0*kk) ) && percs[j][i] < ( 1.0/(2.0*kk) )){
+							if(percs[i][j] < ( 1.0/(2.0*kk) ) || percs[j][i] < ( 1.0/(2.0*kk) )){
 								scores[i][j] = 0.0;
 							}
 						}

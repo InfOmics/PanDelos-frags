@@ -137,7 +137,9 @@ for gene in gene_positions:
         gend = gstart
         gstart = t
     for i in range(gstart, gend+1):
-        covered_by_genes[i] = True
+        if len(covered_by_genes) > i:
+            covered_by_genes[i] = True
+
 
     if covered_positions > 0:
         #print(gene)
