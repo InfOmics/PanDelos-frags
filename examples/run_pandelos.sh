@@ -21,7 +21,7 @@ echo "${basedir}/${species}/input/fragmented/${e}    prokaryotic" >> ${basedir}/
 done
 
 
-
+rm -rf ${basedir}/${species}/input/complete/*fai
 for e in $(ls ${basedir}/${species}/input/complete); do
 #e=`basename $e`
 echo "${basedir}/${species}/input/complete/${e}    complete" >> ${basedir}/${species}/PanDelos/${ilist}
