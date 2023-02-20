@@ -25,8 +25,7 @@ fi
 kk="${sdir}/calculate_k.py"
 ig="${sdir}/ig/ig.jar"
 nc="${sdir}/netclu_ng.py"
-fl="${sdir}/filter_net.py"
-thr=0.0
+
 
 if [ ! -f "$kk" ]; then
 	echo "ERROR: file calculate_k.py not found in $sdir !"
@@ -75,9 +74,6 @@ java -server -cp ${sdir}/ext/commons-io-2.6.jar -cp $ig infoasys.cli.pangenes.Pa
 echo "de-clustering ..."
 date
 
-cp $tmp ${tmp}_predeclustering
-cp $dnet ${dnet}_total
-python3 $fl $dnet $thr
 
 python3 $nc $idb  $dnet >> $tmp
 echo "writing gene gene families in $clus ..."
