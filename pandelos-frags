@@ -17,13 +17,17 @@ chmod +x $SCRIPTPATH/scripts/*.sh
 #PATH=$PATH:${$SCRIPTPATH/scripts/}
 
 
-if [ $# -eq 0 ]
+if [ $# -ne 2 ]
   then
     echo "Usage: pandelos-frags ilist output_directory"
+    exit 1
 fi
 
 ifile="$1"
 odir="$2"
+
+echo 'Selected input file: ${ifile}'
+echo 'Selected output file $[odir}'
 
 mkdir -p $odir
 rm $odir/*
