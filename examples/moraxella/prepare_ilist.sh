@@ -9,10 +9,10 @@ if [ -f "$ilist" ]; then
 fi
 
 mkdir -p $gdir
-rm $gdir/*
+rm -f -- $gdir/*
 
 mkdir -p $odir
-rm $odir/*
+rm -f -- $odir/*
 
 for e in `cat PanDelos-fragments/examples/moraxella/moraxella_complete.txt`; do
 wget -P "$gdir" $e
