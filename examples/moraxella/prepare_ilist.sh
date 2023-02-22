@@ -1,8 +1,8 @@
 #!/bin/bash
 
-gdir="input_genomes"
-odir="result"
-ilist="ilist.csv"
+gdir="PanDelos-fragments/examples/moraxella/input"
+odir="PanDelos-fragments/examples/moraxella/output"
+ilist="PanDelos-fragments/examples/moraxella/ilist.csv"
 
 if [ -f "$ilist" ]; then
     rm $ilist
@@ -30,5 +30,4 @@ e=`echo $e | sed s/\.gz//g`
 echo "$gdir/$e    prokaryotic" >>$ilist
 done
 
-
-../../pandelos-frags $ilist $odir
+#../../pandelos-frags $ilist $odir
