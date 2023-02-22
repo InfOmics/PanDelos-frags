@@ -14,15 +14,15 @@ rm $gdir/*
 mkdir -p $odir
 rm $odir/*
 
-for e in `cat moraxella_complete.txt`; do
-wget -P "$gdir" $e 
+for e in `cat PanDelos-fragments/examples/moraxella/moraxella_complete.txt`; do
+wget -P "$gdir" $e
 e=`basename $e`
 gunzip $gdir/$e
 e=`echo $e | sed s/\.gz//g`
 echo "$gdir/$e    complete" >>$ilist
 done
 
-for e in `cat moraxella_fragmented.txt`; do
+for e in `cat PanDelos-fragments/examples/moraxella/moraxella_fragmented.txt`; do
 wget -P "$gdir" $e 
 e=`basename $e`
 gunzip $gdir/$e
