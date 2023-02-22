@@ -5,7 +5,7 @@ SCRIPTPATH=`dirname $( realpath $0 )`
 echo $SCRIPTPATH
 
 echo "----------------------------------------"
-echo "PanDelos-fragments"
+echo "PanDelos-frags"
 echo "University of Verona, Italy"
 echo "Bonnici et al."
 echo "----------------------------------------"
@@ -37,7 +37,7 @@ while read -r line; do
     gname=`basename $gfile`
     echo "$gfile" 
     if [ "$gtype" = "complete" ]; then
-        echo "COMLPETE"
+        echo "COMPLETE"
         cat $gfile >> $odir/ALL_complete_genomes_genes.fna
         bash $SCRIPTPATH/scripts/complete_genome_genes_extraction.sh $gfile $odir/complete/$gname
         cat $odir/complete/$gname/gene_sequences.fna >> $odir/ALL_genes.fna

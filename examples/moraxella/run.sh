@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 gdir="input_genomes"
 odir="result"
