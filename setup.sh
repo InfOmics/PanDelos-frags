@@ -31,6 +31,15 @@ fi
 for f in *.tar.gz
 do
   tar -xvf "$f"
+  
+  if [ $? -ne 0 ]
+  then
+  	echo '\nDownload failed for $f, downloading again:'
+	rm ${f}
+  	wget ${ftp_path}/$f
+	tar -xvf "$f"
+  fi
+
 done
 rm *.tar.gz
 
