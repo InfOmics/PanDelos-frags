@@ -20,7 +20,7 @@ This command allows you to create a running PanDelos-frags Docker container. In 
 * `-it`: create an interactive docker container
 * `--rm`: the running instance of the container will be removed after it is closed
 * `-v <absolute_path_db>:/PanDelos-frags/ref_prok_rep_genomes`: it creates a connection between the local directory where you want to store the database required to run PanDelos-frags (left side, before the double dots) and its corresponding location in the container (right side, after the double dots). It is mandatory that you use the as database path of the container `/PanDelos-frags/ref_prok_rep_genomes`.
-* `-v <absolute_path_workingdir>:/<container_workingdir>`: it creates a connection between the local directory where you want to store all files related to a specific PanDelos-frags run (left side, before the double dots) and its corresponding location in the container (right side, after the double dots).
+* `-v <absolute_path_workingdir>:/<container_workingdir>`: it creates a connection between the local directory where you want to store all files (input/output) related to a specific PanDelos-frags run (left side, before the double dots) and its corresponding location in the container (right side, after the double dots).
 In this example
 
 ### 2) Run setup.sh script to download database
@@ -31,11 +31,10 @@ Note that the database will persist locally even after you stop the container. T
 If you have multiple cores available you can run this script in parallel by adding as `<n_cores>` a number greater than 1 (suggested 18 cores), otherwise just write 1.
 
 ### 3) Download input data to run an example
-`./PanDelos-frags/examples/moraxella/prepare_ilist.sh`
+`./PanDelos-frags/examples/moraxella/prepare_ilist.sh <container_workingdir>`
 
-This script allows you to download 10 Moraxella genomes from NCBI and creates the input file `ilist.csv` required by PanDelos-frags.
-You can see the results of running this script in `./PanDelos-fragments/examples/moraxella/ilist.csv`. 
-In short the ilist file is a comma-separated file where the first column contains all the paths to the genomes and the second column contains one of `complete` or `fragmented`, depending on whether the genome is a single-sequence fasta file (`complete`) or a multi-fasta file (`fragmented`).
+This script downloads 20 Moraxella genomes from NCBI into the input directory `<container_workingdir>/data`. It also creates the input file `<container_workingdir>/ilist.csv` required to run PanDelos-frags. 
+In short the `ilist.csv` file is a comma-separated file where the first column contains all the paths to the genomes and the second column contains one of `complete` or `fragmented`, depending on whether the genome is a single-sequence fasta file (`complete`) or a multi-fasta file (`fragmented`).
 
 Example:
 ```
@@ -46,7 +45,7 @@ PanDelos-frags/examples/moraxella/input/GCF_010612395.1_ASM1061239v1_genomic.fna
 ```
 
 ### 4) Run PanDelos-frags
-`pandelos-frags PanDelos-frags/examples/moraxella/ilist.csv <container_workingdir>/<ouput_dir>`
+`pandelos-frags <container_workingdir>/ilist.csv <container_workingdir>/<ouput_dir>`
 
 This is the actual PanDelos-frags command you need to use to run the tool. The required parameters are an:
 * `ilist.csv` input file, formatted as described in the previous point
