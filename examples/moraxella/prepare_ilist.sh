@@ -1,18 +1,15 @@
 #!/bin/bash
 
-gdir="PanDelos-frags/examples/moraxella/input"
-odir="PanDelos-frags/examples/moraxella/output"
-ilist="PanDelos-frags/examples/moraxella/ilist.csv"
+input_path=$1
+gdir=$input_path/data
+ilist=$input_path/ilist.csv
 
 if [ -f "$ilist" ]; then
     rm $ilist
 fi
 
 mkdir -p $gdir
-rm -f -- $gdir/*
-
-mkdir -p $odir
-rm -f -- $odir/*
+rm -rf -- $gdir/*
 
 for e in `cat PanDelos-frags/examples/moraxella/moraxella_complete.txt`; do
 wget -P "$gdir" $e
@@ -30,4 +27,3 @@ e=`echo $e | sed s/\.gz//g`
 echo "$gdir/$e,fragmented" >>$ilist
 done
 
-#../../pandelos-frags $ilist $odir

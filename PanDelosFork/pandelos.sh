@@ -81,7 +81,7 @@ date
 grep "F{ " $tmp | sed s/F{\ //g | sed s/}//g | sed s/\ \;//g | sort | uniq > $clus
 date
 rm $tmp
-
+rm $dnet
 
 echo "################################################################################"
 echo "# PanDelos :                                                                   #"
