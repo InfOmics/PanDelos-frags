@@ -26,11 +26,11 @@ fi
 ifile="$1"
 odir="$2"
 
-echo 'Selected input file: ${ifile}'
-echo 'Selected output file ${odir}'
+#echo 'Selected input file: ${ifile}'
+#echo 'Selected output file ${odir}'
 
 mkdir -p $odir
-rm $odir/*
+rm -r $odir/*
 mkdir $odir/complete
 
 
