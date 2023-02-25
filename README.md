@@ -8,8 +8,6 @@ Once the docker is up and running there are two main steps to get ready to run t
 * prepare input data 
 
 In the following lines you will see an example of how to get the tool to work and what is the expected input data.
- 
-## CASE A: First time running PanDelos-frags
 
 ### 0) Download docker image
 `docker pull cmengoni/pandelos-frags`
@@ -54,3 +52,8 @@ This is the actual PanDelos-frags command you need to use to run the tool. The r
 * `ilist.csv` input file, formatted as described in the previous point
 * an output directory. It's important that the output directory is in the `<container_workingdir>` so that the output will be saved in a container folder which is linked to your local directory. In this way the ouput will persist even after you close the docker container.
 
+
+## Notes
+Once the database has been built you can run PanDelos-frags on your own data structured as an ilist.csv file just by running the docker (step 1) and then running the tool (step 4). Just make sure that the `ilist.csv` file is in a directory that you have linked in the container, so that the output persists.
+
+## Output structure
