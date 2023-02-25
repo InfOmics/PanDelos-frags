@@ -1,8 +1,8 @@
 #!/bin/bash
 
-gdir="PanDelos-fragments/examples/moraxella/input"
-odir="PanDelos-fragments/examples/moraxella/output"
-ilist="PanDelos-fragments/examples/moraxella/ilist.csv"
+gdir="PanDelos-frags/examples/moraxella/input"
+odir="PanDelos-frags/examples/moraxella/output"
+ilist="PanDelos-frags/examples/moraxella/ilist.csv"
 
 if [ -f "$ilist" ]; then
     rm $ilist

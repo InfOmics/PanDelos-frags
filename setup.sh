@@ -21,7 +21,7 @@ then
 	cat tmp1 | grep "ref_prok_rep_genomes\...\.tar\.gz..exists" | grep -o 'ref_prok_rep_genomes\...\.tar\.gz' > tmp2
 	cat tmp2 | while read line; do echo ${ftp_path}/$line >> tmp3; done
 	cat tmp3 | xargs -n 1 -P $cores wget -q
-	#rm tmp1 tmp2 tmp3
+	rm tmp1 tmp2 tmp3
   
 else
 
