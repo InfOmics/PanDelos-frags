@@ -14,20 +14,20 @@ rm -f -- $gdir/*
 mkdir -p $odir
 rm -f -- $odir/*
 
-for e in `cat PanDelos-fragments/examples/moraxella/moraxella_complete.txt`; do
+for e in `cat PanDelos-frags/examples/moraxella/moraxella_complete.txt`; do
 wget -P "$gdir" $e
 e=`basename $e`
 gunzip $gdir/$e
 e=`echo $e | sed s/\.gz//g`
-echo "$gdir/$e    complete" >>$ilist
+echo "$gdir/$e,complete" >>$ilist
 done
 
-for e in `cat PanDelos-fragments/examples/moraxella/moraxella_fragmented.txt`; do
+for e in `cat PanDelos-frags/examples/moraxella/moraxella_fragmented.txt`; do
 wget -P "$gdir" $e 
 e=`basename $e`
 gunzip $gdir/$e
 e=`echo $e | sed s/\.gz//g`
-echo "$gdir/$e    prokaryotic" >>$ilist
+echo "$gdir/$e,fragmented" >>$ilist
 done
 
 #../../pandelos-frags $ilist $odir

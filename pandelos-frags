@@ -27,7 +27,7 @@ ifile="$1"
 odir="$2"
 
 echo 'Selected input file: ${ifile}'
-echo 'Selected output file $[odir}'
+echo 'Selected output file ${odir}'
 
 mkdir -p $odir
 rm $odir/*
@@ -36,8 +36,8 @@ mkdir $odir/complete
 
 while read -r line; do
     echo "$line"
-    gtype=`echo -n $line | cut -d" " -f 2 |  tr -d '\r'`
-    gfile=`realpath $( echo $line | cut -d" " -f 1 )`
+    gtype=`echo -n $line | cut -d"," -f 2 |  tr -d '\r'`
+    gfile=`realpath $( echo $line | cut -d"," -f 1 )`
     gname=`basename $gfile`
     echo "$gfile" 
     if [ "$gtype" = "complete" ]; then
