@@ -1,5 +1,10 @@
 # PanDelos-frags
-A version of PanDelos that discovers pangenomic content in fragmented genomes.
+PanDelos-frags: a methodology for discovering pangenomic content of incomplete microbial assemblies
+
+Vincenzo Bonnici, Claudia Mengoni, Manuel Mangoni, Giuditta Franco, Rosalba Giugno
+
+
+![Workflow](https://github.com/Cengoni/PanDelos-frags-SUPP/blob/main/workflow.png)
 
 ## Using PanDelos-frags
 In order to run PanDelos-frags you can download the docker image with all required dependencies installed. 
