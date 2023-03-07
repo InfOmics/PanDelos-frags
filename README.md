@@ -14,7 +14,7 @@ Once the docker is up and running there are two main steps to get ready to run t
 
 In the following lines you will see an example of how to get the tool to work and what is the expected input data.
 
-### 0) Download docker image
+### Download docker image
 `docker pull cmengoni/pandelos-frags`
 
 ### 1) Run docker
@@ -61,3 +61,7 @@ This is the actual PanDelos-frags command you need to use to run the tool. The r
 Once the database has been built you can run PanDelos-frags on your own data structured as an ilist.csv file just by running the docker (step 1) and then running the tool (step 4). Just make sure that the `ilist.csv` file is in a directory that you have linked in the container, so that the output persists.
 
 ## Output structure
+The main output file is `output.clus` that will be found in the output directory. This file is a space-separated file where each line represents a gene family. The genes are represented by a code used throughout the analysis (e.g. NC_000908.2reconstructed_45tua:101242-101644(+)) which contains the genome of belonging (e.g. NC_000908.2reconstructed_45tua) and its location on the genome (e.g. 101242-101644(+)). 
+
+## Supplementary files
+Supplementary scripts and data used to run the analysis reported in PanDelos-frags manuscript can be found at [Cengoni/PanDelos-frags-SUPP](https://github.com/Cengoni/PanDelos-frags-SUPP)
