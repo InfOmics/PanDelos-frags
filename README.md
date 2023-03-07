@@ -1,8 +1,26 @@
-# PanDelos-frags
-PanDelos-frags: a methodology for discovering pangenomic content of incomplete microbial assemblies
+# PanDelos-frags: a methodology for discovering pangenomic content of incomplete microbial assemblies
 
-Vincenzo Bonnici, Claudia Mengoni, Manuel Mangoni, Giuditta Franco, Rosalba Giugno
-
+## Abstract
+Pangenomics was originally defined as the problem of comparing the compo-
+sition of genes into gene families within a set of bacterial isolates belonging
+to the same species. The problem requires the calculation of sequence ho-
+mology among such genes. When combined with metagenomics, namely
+for human microbiome composition analysis, gene-oriented pangenome de-
+tection becomes a promising method to decipher ecosystem functions and
+population-level evolution.
+Established computational tools are able to investigate the genetic con-
+tent of isolates for which a complete genomic sequence is available. However,
+there is a plethora of incomplete genomes that are available on public re-
+sources, which only a few tools may analyse. Incomplete means that the
+process for reconstructing their genomic sequence is not complete, and only
+fragments of their sequence are currently available. However, the information
+contained in these fragments may play an essential role in the analyses.
+Here, we present PanDelos-frags, a computational tool which exploits and
+extends previous results in analysing complete genomes. It provides a new
+methodology for inferring missing genetic information and thus for managing
+incomplete genomes. PanDelos-frags outperforms state-of-the-art approaches
+in reconstructing gene families in synthetic benchmarks and in a real use case
+of metagenomics
 
 ![Workflow](https://github.com/Cengoni/PanDelos-frags-SUPP/blob/main/workflow.png)
 
