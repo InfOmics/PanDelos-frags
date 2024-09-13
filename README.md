@@ -84,3 +84,10 @@ The directories `complete/` and `fragmented/` contain all the relative intermedi
 
 ## Supplementary files
 Supplementary scripts and data used to run the analysis reported in PanDelos-frags manuscript can be found at [Cengoni/PanDelos-frags-SUPP](https://github.com/Cengoni/PanDelos-frags-SUPP)
+
+## References
+If you have used any of the PanDelos-frags project software, please cite the following paper:
+
+     Vincenzo Bonnici, Claudia Mengoni, Manuel Mangoni, Giuditta Franco, Rosalba Giugno
+     PanDelos-frags: A methodology for discovering pangenomic content of incomplete microbial assemblies
+     Journal of Biomedical Informatics, Volume 148, December 2023. https://doi.org/10.1016/j.jbi.2023.104552
